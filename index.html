@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Тремирие: Империя-Сёгунат Канто</title>
+
+  <!-- Add Bootstrap 5 CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+  <!-- Add meta tags for SEO -->
+  <meta name="description" content="Тремирие: Империя-Сёгунат Канто - описание, информация, телефон и прочее.">
+  <meta name="keywords" content="Тремирие, Империя-Сёгунат Канто, телефон, информация, описание">
+  <meta name="robots" content="index, follow">
+
+  <style>
+    body {
+      background-image: url('https://i.ibb.co/QjDdM1GZ/2025-08-15-15-21-37.png');
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+    }
+
+    .text {
+      color: white;
+      font-size: 1.5rem;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+
+    #phone-number {
+      display: none;
+    }
+
+    .bottom-text {
+      margin-bottom: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="text">
+    <h1 class="bottom-text">Тремирие: Империя-Сёгунат Канто</h1>
+    <div id="phone-number">+7 (955) 414-642</div>
+    <a href="tel:+7955414642" id="phone-link" style="display: none;"> </a>
+  </div>
+
+  <!-- Add jQuery CDN -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      if (/Mobi|Android|iPhone/i.test(navigator.userAgent)) {
+        $('#phone-number').show();
+        $('#phone-link').hide();
+      } else {
+        $('#phone-number').hide();
+        $('#phone-link').show();
+      }
+    });
+  </script>
+
+  <!-- Add Bootstrap 5 JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+</html>
